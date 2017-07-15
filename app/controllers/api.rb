@@ -1,5 +1,4 @@
 class ClickbaitGenerator < Sinatra::Base
-
   get '/api' do
     headers 'Access-Control-Allow-Origin' => '*'
     content_type :json
