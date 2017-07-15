@@ -7,7 +7,6 @@ gem 'dm-postgres-adapter'
 gem 'dm-timestamps'
 gem 'rake'
 gem 'sinatra'
-# gem 'sinatra-partial'
 gem 'thin'
 
 group :test do

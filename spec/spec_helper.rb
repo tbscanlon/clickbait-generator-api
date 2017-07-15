@@ -10,17 +10,15 @@ require 'simplecov-console'
 require 'data_mapper'
 require 'dm-postgres-adapter'
 require 'dm-rspec'
-# require_relative 'backend/test_helpers'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(
   [SimpleCov::Formatter::Console])
 
 SimpleCov.start
-# Capybara.app = MakersBnb
+Capybara.app = ClickbaitGenerator
 
 RSpec.configure do |config|
   config.include(DataMapper::Matchers)
-  # config.include(TestHelper)
 
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true

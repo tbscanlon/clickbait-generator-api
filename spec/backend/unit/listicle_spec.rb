@@ -15,7 +15,7 @@ describe Listicle do
     it { is_expected.to respond_to :generate }
 
     it 'returns a listicle string' do
-      expect(subject.generate(5)).to eq('Top 5 ways to run tests.')
+      expect(subject.generate(5)).to eq({ title: 'Top 5 ways to run tests.' })
     end
   end
 end

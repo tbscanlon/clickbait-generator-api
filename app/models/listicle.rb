@@ -1,13 +1,17 @@
 class Listicle
   attr_reader :prefixes, :suffixes
 
+  def self.create
+    @listicle = Listicle.new
+  end
+
   def initialize(prefixes = Prefix.all, suffixes = Suffix.all)
     @prefixes = prefixes
     @suffixes = suffixes
   end
 
   def generate(num = rand(1..50))
-    construct_string(num)
+    { title: construct_string(num) }
   end
 
   private
