@@ -11,11 +11,15 @@ feature 'API' do
     expect(page).to have_content /Top [0-9]+ ways to run tests./
   end
 
-  scenario 'API requests return a listicle title with a requested number if specified' do
-    visit('/api/50')
-    expect(page).to have_content /Top 50 ways to run tests./
+  feature 'Specific numbers in title' do
+    scenario 'returns title with 50 in content' do
+      visit('/api/50')
+      expect(page).to have_content /Top 50 ways to run tests./
+    end
 
-    visit('/api/100')
-    expect(page).to have_content /Top 100 ways to run tests./
+    scenario 'returns title with 100 in content' do
+      visit('/api/100')
+      expect(page).to have_content /Top 100 ways to run tests./
+    end
   end
 end
