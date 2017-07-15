@@ -1,57 +1,57 @@
-# Side project challenge
+# Clickbait Generator API
 
-Many good programmers have side projects that they work on for fun or to learn.  This weekend is a chance to work on your own side project.  You'll build something of your own choosing!
+Get the title for your next viral listicle using this one weird API!
 
-## Instructions
+## Project Spec
 
-* Challenge time: rest of the day and weekend, until Monday 9am.
-* Feel free to use google, your notes, books, etc. but work on your own.
-* If you have a partial solution, **still check in a partial solution**.
-* You must submit a pull request to this repo with your code by 9am Monday morning.
+The Clickbait Generator is an API for retreiving a randomised text string that mimics the listicle titles used by the likes of Buzzfeed, The Huffington Post and Time. The generator can do the following:
+- Join together a a random sentence prefix and suffix for output.
+- Be accessed using a RESTful API. My hope is someone will use this useless API for something equally useless of their own.
 
-## Setup
+There's also a web front-end, with the following features:
+- Some documentation on how to use the API.
+- A live demo, using AJAX to fetch a new title asynchronously.
+- *Maybe* social media sharing buttons. We'll see if I get round to it.
 
-* Fork this repo, and clone to your local machine.
+## User Stories
+```
+As a User,
+So that I can get a sentence suffix,
+I would like to be able to retreive one from somewhere.
+```
 
-## Choosing a project
+```
+As a User,
+So that I can get a sentence prefix,
+I would like to be able to retreive one from somewhere.
+```
 
-You can build whatever you want.
+```
+As a User,
+So that I can form a complete sentence,
+I would like to be able to join a prefix and suffix together.
+```
 
-### Coming up with ideas
+```
+As a User,
+So that I can have a very large number of possible sentences,
+I would like to be able to have a random number inserted into the sentence.
+```
 
-Some possible ways of coming up with ideas:
+```
+As a User,
+So that I can show my friends how ironic and cool I am,
+I would like to be able to share my clickbait title over Twitter.
+```
 
-* Maybe build something that you'd like to use.
+```
+As a Developer,
+So that I can access a clickbait title from anywhere,
+I would like to be able to make a GET request to a route.
+```
 
-* Maybe build something you've used before to learn how it works.
-
-* Maybe build something that will involve solving a techncial challenge you're interested in.
-
-* Maybe pick from this list of [project suggestions](https://github.com/karan/Projects).
-
-### Guidelines for good projects
-
-* Make sure you'll be able to do a Minimum Viable Product in a weekend.  Often, the best learning projects have very small MVPs, but can be expanded in many directions.
-
-* You've only got two days, so it's probably best to use languages and frameworks you already know.
-
-* Make sure your project is something you can write tests for.
-
-## Implementing your project
-
-* Write user stories before starting.
-
-* Plan your MVP and implement that first.
-
-* TDD, of course.
-
-* Stick to the design/TDD/refactor loop.
-
-* In code review we'll be hoping to see:
-  * All tests passing
-  * High [Test coverage](https://github.com/makersacademy/course/blob/master/pills/test_coverage.md) (>95% is good)
-  * The code is elegant: every class has a clear responsibility, methods are short etc.
-
-## Monday
-
-We'll have our normal Monday morning code review.  You'll get into groups and review each other's code.  In the whole-cohort code review, some people will be randomly chosen to show their code on the projector.
+```
+As a Developer,
+So that I can use a clickbait title anywhere,
+I would like to be able to get a title as a JSON object.
+```
