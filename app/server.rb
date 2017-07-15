@@ -6,6 +6,6 @@ class ClickbaitGenerator < Sinatra::Base
   end
 
   get '/' do
-    listicle.generate
+    listicle.generate[:title]
   end
 end
