@@ -7,6 +7,7 @@ gem 'dm-postgres-adapter'
 gem 'dm-timestamps'
 gem 'rake'
 gem 'sinatra'
+gem 'sinatra-partial'
 gem 'thin'
 
 group :test do
@@ -15,6 +16,7 @@ group :test do
   gem 'dm-rspec'
   gem 'rspec'
   gem 'rubocop'
+  gem 'selenium-webdriver'
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
 end
