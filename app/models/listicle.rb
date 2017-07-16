@@ -10,7 +10,7 @@ class Listicle
     @suffixes = suffixes
   end
 
-  def generate(num = rand(1..50))
+  def generate(num = rand(2..50))
     { title: construct_string(num) }
   end
 
